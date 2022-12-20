@@ -22,12 +22,24 @@ body{
     display: flex;
     justify-content: center;
     list-style-type: none;
+    text-decoration: none 
+
 }
 
 .social_list li{
     margin: 0 1em;
+    text-decoration: none 
+
 }
 
+.social_list a{
+    text-decoration: none
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
 .social_list li:hover{
     color: #22D6E6;
 }

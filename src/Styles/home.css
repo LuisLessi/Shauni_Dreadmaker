@@ -1,5 +1,5 @@
 .home_container {
-        height: 100%;
+    height: 90%;
         background-size: cover;
     display: flex;
     flex-direction: column;
@@ -16,22 +16,64 @@
     margin-top: -170px;
     color: white;
 }
-
+.home_container h3{
+    
+    color: white;
+}
 .home_container h1 span{
     color: white;
     border-radius: 5px;
     padding: 0 .2em;
     background-color: #4c295c;
 }
+.home_container a{
+    text-decoration: none;
+}
+
 
 .home_container img{
     width: 300px;
     margin: 2em 0;
     border-radius: 10%;
+    -webkit-transition: all 1s ease;
+  /* Safari and Chrome */
+  -moz-transition: all 1s ease;
+  /* Firefox */
+  -o-transition: all 1s ease;
+  /* IE 9 */
+  -ms-transition: all 1s ease;
+  /* Opera */
+  transition: all 1s ease;
+
 }
 .home_container img:hover{
     border: 43px;
+    -webkit-transform: scale(1.15);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.15);
+    /* Firefox */
+    -ms-transform: scale(1.15);
+    /* IE 9 */
+    -o-transform: scale(1.15);
+    /* Opera */
+    transform: scale(1.15);
+    cursor: pointer;
+    
 }
+.flor{
+    animation: spinner 10s linear infinite;
+
+}
+
+@keyframes spinner {
+    0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 
 #d2::-webkit-scrollbar {
     width: 16px;
