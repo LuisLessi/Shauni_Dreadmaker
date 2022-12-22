@@ -56,3 +56,10 @@ a:-webkit-any-link {
     font-weight: bold;
     color: #22D6E6; 
 }
+
+@media only screen and (max-width: 1024px) {
+ h3{
+    font-size: 0.8em;
+
+ }
+}

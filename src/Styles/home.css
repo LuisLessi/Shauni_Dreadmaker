@@ -31,7 +31,41 @@
     text-decoration: none;
 }
 
+.whats-link{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 1px 1px 2px #888;
+}
 
+
+
+@media only screen and (max-width: 1024px) {
+    .whats-link{
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        bottom: 60px;
+        right: 50px;
+        z-index: 100;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 1px 1px 2px #888;
+    }
+    .home_container h3{
+        font-size: 1.2em;
+
+}
+}
 .home_container img{
     width: 300px;
     margin: 2em 0;

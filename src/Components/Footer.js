@@ -11,7 +11,7 @@ function Footer() {
         
         <footer className='rodape'>
         <ul className='social_list '>
-            <li >
+            <li id='footer'>
                 <a href="https://www.facebook.com/dreadsdashauni?mibextid=ZbWKwL" target="_blank" style={{textDecoration: 'none'}} className='link' rel="noopener noreferrer">
                 <FaFacebook /></a>
             </li>
@@ -24,9 +24,14 @@ function Footer() {
                 <FaWhatsapp /></a>
             </li>
         </ul> 
+        <br/>
+
+        <h3>Local: R. Luís Fernandes Neto - Jardim Joaquim Procopio de Araujo Ferraz 
+                Ribeirão Preto - SP</h3>
         <p className='copy_right'>
-            <span>Shauní</span> &copy; 2022
+            <span>Shauní</span> &copy; 2018
         </p>
+
         </footer>
     )
 }

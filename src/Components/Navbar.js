@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/navbar.css";
 import logo from "../assets/logo.png"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 function Navbar() {
@@ -13,15 +14,30 @@ function Navbar() {
 
 	return (
 		<header>
-			<a href="/#"><img src={logo} alt="Logo Shauní"/></a>
+			<Link to="home" spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}><img src={logo} alt="Logo Shauní"/></Link>
 			<nav ref={navRef}>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				</p>
-				<nobr><a href="/#">Meus Dreads</a></nobr>
-				<a href="/#"><nobr>Sobre mim</nobr></a>
-				<a href="/#">Contatos</a>
+				<nobr><Link spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+	to="dreads" onClick={showNavbar}>Meus Dreads</Link></nobr>
+				<Link spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+	to="sobre" onClick={showNavbar}><nobr>Sobre mim</nobr></Link>
+				<Link spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+	to="sobre" onClick={showNavbar}>Contatos</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

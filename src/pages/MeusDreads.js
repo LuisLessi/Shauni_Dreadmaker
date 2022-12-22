@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import {motion} from 'framer-motion'
 import '../Styles/dreads.css'
 
-
 import img1 from '../assets/dreads/img1.jpeg'
 import img2 from '../assets/dreads/img2.jpeg'
 import img3 from '../assets/dreads/img3.jpeg'
@@ -45,9 +44,10 @@ function MeusDreads() {
     }, [])
 
     return ( 
-        <section>
+        <section id='dreads'>
         <h1 className='titleInvi'>&nbsp;</h1>
         <h1 className='title'>Manutenções e extensões realizadas</h1>
+       
          <div className='buttons'>
                     <button onClick={handleLeftClick}><img  src={right} alt="Scroll Left" /></button>
                 <button onClick={handleRightClick}><img src={right} alt="Scroll Right" /></button>
