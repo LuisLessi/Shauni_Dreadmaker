@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    height: 10%;
 }
 
 body{
@@ -40,7 +40,7 @@ a:-webkit-any-link {
     color: white;
     cursor: pointer;
   }
-.social_list li:hover{
+  a:-webkit-any-link:hover{
     color: #22D6E6;
 }
 .social_list svg{

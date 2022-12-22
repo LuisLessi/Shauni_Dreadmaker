@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo_principal2.png";
 import '../Styles/home.css'
- 
 
 function Home() {
     return (

@@ -25,7 +25,7 @@ function Footer() {
             </li>
         </ul> 
         <p className='copy_right'>
-            <span>Luís Lessi</span> &copy; 2022
+            <span>Shauní</span> &copy; 2022
         </p>
         </footer>
     )

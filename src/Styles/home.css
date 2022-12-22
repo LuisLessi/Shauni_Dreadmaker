@@ -1,5 +1,7 @@
+
+
 .home_container {
-    height: 90%;
+    height: 58%;
         background-size: cover;
     display: flex;
     flex-direction: column;
@@ -7,7 +9,6 @@
     justify-content: center;
     padding: 4em;
     background-image: url("../assets/background_home.jpg");
-    text-decoration-color: red;
 }
 
 .home_container h1{
@@ -62,7 +63,6 @@
 }
 .flor{
     animation: spinner 10s linear infinite;
-
 }
 
 @keyframes spinner {
